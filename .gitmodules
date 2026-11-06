@@ -1,3 +1,7 @@
 [submodule "gator"]
 	path = gator
 	url = git@github.com:tsmarques/gator-root.git
+
+[submodule "semx"]
+  path=semx
+  url=git@codeberg.org/tsm/semx.git
