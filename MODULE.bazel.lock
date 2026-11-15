@@ -513,6 +513,356 @@
           }
         }
       }
+    },
+    "@@toolchains_arm_gnu+//:extensions.bzl%arm_toolchain": {
+      "general": {
+        "bzlTransitiveDigest": "O2odlTM43tx8TJfrsDL1MfKTIAgGXyORJ5DpQBHAe7M=",
+        "usagesDigest": "m4eZDATcqTKeSA/zU7Ag+7fcviMV/YR8f3L0XRWan8Y=",
+        "recordedInputs": [
+          "REPO_MAPPING:bazel_features+,bazel_features_globals bazel_features++version_extension+bazel_features_globals",
+          "REPO_MAPPING:bazel_features+,bazel_features_version bazel_features++version_extension+bazel_features_version",
+          "REPO_MAPPING:protobuf+,proto_bazel_features bazel_features+",
+          "REPO_MAPPING:rules_cc+,bazel_features bazel_features+",
+          "REPO_MAPPING:rules_cc+,bazel_skylib bazel_skylib+",
+          "REPO_MAPPING:rules_cc+,bazel_tools bazel_tools",
+          "REPO_MAPPING:rules_cc+,cc_compatibility_proxy rules_cc++compatibility_proxy+cc_compatibility_proxy",
+          "REPO_MAPPING:rules_cc+,com_google_protobuf protobuf+",
+          "REPO_MAPPING:rules_cc+,platforms platforms",
+          "REPO_MAPPING:rules_cc+,rules_cc rules_cc+",
+          "REPO_MAPPING:rules_cc++compatibility_proxy+cc_compatibility_proxy,rules_cc rules_cc+",
+          "REPO_MAPPING:toolchains_arm_gnu+,bazel_skylib bazel_skylib+",
+          "REPO_MAPPING:toolchains_arm_gnu+,bazel_tools bazel_tools",
+          "REPO_MAPPING:toolchains_arm_gnu+,rules_cc rules_cc+",
+          "REPO_MAPPING:toolchains_arm_gnu+,toolchains_arm_gnu toolchains_arm_gnu+"
+        ],
+        "generatedRepoSpecs": {
+          "arm_none_eabi": {
+            "repoRuleId": "@@toolchains_arm_gnu+//:deps.bzl%toolchains_arm_gnu_repo",
+            "attributes": {
+              "toolchain_name": "arm_none_eabi",
+              "toolchain_prefix": "arm-none-eabi",
+              "version": "13.2.1",
+              "hosts": {
+                "arm_none_eabi_darwin_x86_64": [
+                  "@platforms//os:macos",
+                  "@platforms//cpu:x86_64"
+                ],
+                "arm_none_eabi_darwin_arm64": [
+                  "@platforms//os:macos",
+                  "@platforms//cpu:arm64"
+                ],
+                "arm_none_eabi_linux_x86_64": [
+                  "@platforms//os:linux",
+                  "@platforms//cpu:x86_64"
+                ],
+                "arm_none_eabi_linux_aarch64": [
+                  "@platforms//os:linux",
+                  "@platforms//cpu:aarch64"
+                ],
+                "arm_none_eabi_windows_x86_64": [
+                  "@platforms//os:windows",
+                  "@platforms//cpu:x86_64"
+                ]
+              }
+            }
+          },
+          "arm_none_eabi_darwin_x86_64": {
+            "repoRuleId": "@@toolchains_arm_gnu+//:deps.bzl%arm_gnu_cross_hosted_platform_specific_repo",
+            "attributes": {
+              "toolchain_prefix": "arm-none-eabi",
+              "version": "13.2.1",
+              "sha256": "075faa4f3e8eb45e59144858202351a28706f54a6ec17eedd88c9fb9412372cc",
+              "strip_prefix": "arm-gnu-toolchain-13.2.Rel1-darwin-x86_64-arm-none-eabi",
+              "url": "https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu/13.2.rel1/binrel/arm-gnu-toolchain-13.2.rel1-darwin-x86_64-arm-none-eabi.tar.xz",
+              "exec_compatible_with": [
+                "@platforms//os:macos",
+                "@platforms//cpu:x86_64"
+              ]
+            }
+          },
+          "arm_none_eabi_darwin_arm64": {
+            "repoRuleId": "@@toolchains_arm_gnu+//:deps.bzl%arm_gnu_cross_hosted_platform_specific_repo",
+            "attributes": {
+              "toolchain_prefix": "arm-none-eabi",
+              "version": "13.2.1",
+              "sha256": "39c44f8af42695b7b871df42e346c09fee670ea8dfc11f17083e296ea2b0d279",
+              "strip_prefix": "arm-gnu-toolchain-13.2.Rel1-darwin-arm64-arm-none-eabi",
+              "url": "https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu/13.2.rel1/binrel/arm-gnu-toolchain-13.2.rel1-darwin-arm64-arm-none-eabi.tar.xz",
+              "exec_compatible_with": [
+                "@platforms//os:macos",
+                "@platforms//cpu:arm64"
+              ]
+            }
+          },
+          "arm_none_eabi_linux_x86_64": {
+            "repoRuleId": "@@toolchains_arm_gnu+//:deps.bzl%arm_gnu_cross_hosted_platform_specific_repo",
+            "attributes": {
+              "toolchain_prefix": "arm-none-eabi",
+              "version": "13.2.1",
+              "sha256": "6cd1bbc1d9ae57312bcd169ae283153a9572bd6a8e4eeae2fedfbc33b115fdbb",
+              "strip_prefix": "arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi",
+              "url": "https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu/13.2.rel1/binrel/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi.tar.xz",
+              "exec_compatible_with": [
+                "@platforms//os:linux",
+                "@platforms//cpu:x86_64"
+              ]
+            }
+          },
+          "arm_none_eabi_linux_aarch64": {
+            "repoRuleId": "@@toolchains_arm_gnu+//:deps.bzl%arm_gnu_cross_hosted_platform_specific_repo",
+            "attributes": {
+              "toolchain_prefix": "arm-none-eabi",
+              "version": "13.2.1",
+              "sha256": "8fd8b4a0a8d44ab2e195ccfbeef42223dfb3ede29d80f14dcf2183c34b8d199a",
+              "strip_prefix": "arm-gnu-toolchain-13.2.Rel1-aarch64-arm-none-eabi",
+              "url": "https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu/13.2.rel1/binrel/arm-gnu-toolchain-13.2.rel1-aarch64-arm-none-eabi.tar.xz",
+              "exec_compatible_with": [
+                "@platforms//os:linux",
+                "@platforms//cpu:aarch64"
+              ]
+            }
+          },
+          "arm_none_eabi_windows_x86_64": {
+            "repoRuleId": "@@toolchains_arm_gnu+//:deps.bzl%arm_gnu_cross_hosted_platform_specific_repo",
+            "attributes": {
+              "toolchain_prefix": "arm-none-eabi",
+              "version": "13.2.1",
+              "sha256": "51d933f00578aa28016c5e3c84f94403274ea7915539f8e56c13e2196437d18f",
+              "strip_prefix": "arm-gnu-toolchain-13.2.Rel1-mingw-w64-i686-arm-none-eabi",
+              "url": "https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu/13.2.rel1/binrel/arm-gnu-toolchain-13.2.rel1-mingw-w64-i686-arm-none-eabi.zip",
+              "exec_compatible_with": [
+                "@platforms//os:windows",
+                "@platforms//cpu:x86_64"
+              ]
+            }
+          },
+          "arm_none_linux_gnueabihf": {
+            "repoRuleId": "@@toolchains_arm_gnu+//:deps.bzl%toolchains_arm_gnu_repo",
+            "attributes": {
+              "toolchain_name": "arm_none_linux_gnueabihf",
+              "toolchain_prefix": "arm-none-linux-gnueabihf",
+              "version": "13.2.1",
+              "hosts": {
+                "arm_none_linux_gnueabihf_linux_x86_64": [
+                  "@platforms//os:linux",
+                  "@platforms//cpu:x86_64"
+                ],
+                "arm_none_linux_gnueabihf_linux_aarch64": [
+                  "@platforms//os:linux",
+                  "@platforms//cpu:aarch64"
+                ],
+                "arm_none_linux_gnueabihf_windows_x86_64": [
+                  "@platforms//os:windows",
+                  "@platforms//cpu:x86_64"
+                ]
+              }
+            }
+          },
+          "arm_none_linux_gnueabihf_linux_x86_64": {
+            "repoRuleId": "@@toolchains_arm_gnu+//:deps.bzl%arm_gnu_cross_hosted_platform_specific_repo",
+            "attributes": {
+              "toolchain_prefix": "arm-none-linux-gnueabihf",
+              "version": "13.2.1",
+              "sha256": "df0f4927a67d1fd366ff81e40bd8c385a9324fbdde60437a512d106215f257b3",
+              "strip_prefix": "arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-linux-gnueabihf",
+              "url": "https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu/13.2.rel1/binrel/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-linux-gnueabihf.tar.xz",
+              "patches": [
+                "@@toolchains_arm_gnu+//toolchain:patches/0001-Resolve-libc-relative-to-sysroot.patch"
+              ],
+              "exec_compatible_with": [
+                "@platforms//os:linux",
+                "@platforms//cpu:x86_64"
+              ]
+            }
+          },
+          "arm_none_linux_gnueabihf_linux_aarch64": {
+            "repoRuleId": "@@toolchains_arm_gnu+//:deps.bzl%arm_gnu_cross_hosted_platform_specific_repo",
+            "attributes": {
+              "toolchain_prefix": "arm-none-linux-gnueabihf",
+              "version": "13.2.1",
+              "sha256": "8ad384bb328bccc44396d85c8f8113b7b8c5e11bcfef322e77cda3ebe7baadb5",
+              "strip_prefix": "arm-gnu-toolchain-13.2.Rel1-aarch64-arm-none-linux-gnueabihf",
+              "url": "https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu/13.2.rel1/binrel/arm-gnu-toolchain-13.2.rel1-aarch64-arm-none-linux-gnueabihf.tar.xz",
+              "patches": [
+                "@@toolchains_arm_gnu+//toolchain:patches/0001-Resolve-libc-relative-to-sysroot.patch"
+              ],
+              "exec_compatible_with": [
+                "@platforms//os:linux",
+                "@platforms//cpu:aarch64"
+              ]
+            }
+          },
+          "arm_none_linux_gnueabihf_windows_x86_64": {
+            "repoRuleId": "@@toolchains_arm_gnu+//:deps.bzl%arm_gnu_cross_hosted_platform_specific_repo",
+            "attributes": {
+              "toolchain_prefix": "arm-none-linux-gnueabihf",
+              "version": "13.2.1",
+              "sha256": "047e72bcef8f7767691f36929a8c74ef66f717cf6264a31f48dd31bfb067f4c8",
+              "strip_prefix": "arm-gnu-toolchain-13.2.Rel1-mingw-w64-i686-arm-none-linux-gnueabihf",
+              "url": "https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu/13.2.rel1/binrel/arm-gnu-toolchain-13.2.rel1-mingw-w64-i686-arm-none-linux-gnueabihf.zip",
+              "patches": [
+                "@@toolchains_arm_gnu+//toolchain:patches/0001-Resolve-libc-relative-to-sysroot.patch"
+              ],
+              "exec_compatible_with": [
+                "@platforms//os:windows",
+                "@platforms//cpu:x86_64"
+              ]
+            }
+          },
+          "aarch64_none_elf": {
+            "repoRuleId": "@@toolchains_arm_gnu+//:deps.bzl%toolchains_arm_gnu_repo",
+            "attributes": {
+              "toolchain_name": "aarch64_none_elf",
+              "toolchain_prefix": "aarch64-none-elf",
+              "version": "13.2.1-1.1",
+              "hosts": {
+                "aarch64_none_elf_darwin_arm64": [
+                  "@platforms//os:macos",
+                  "@platforms//cpu:arm64"
+                ],
+                "aarch64_none_elf_darwin_x86_64": [
+                  "@platforms//os:macos",
+                  "@platforms//cpu:x86_64"
+                ],
+                "aarch64_none_elf_linux_aarch64": [
+                  "@platforms//os:linux",
+                  "@platforms//cpu:arm64"
+                ],
+                "aarch64_none_elf_linux_x86_64": [
+                  "@platforms//os:linux",
+                  "@platforms//cpu:x86_64"
+                ],
+                "aarch64_none_elf_windows_x86_64": [
+                  "@platforms//os:windows",
+                  "@platforms//cpu:x86_64"
+                ]
+              }
+            }
+          },
+          "aarch64_none_elf_darwin_arm64": {
+            "repoRuleId": "@@toolchains_arm_gnu+//:deps.bzl%arm_gnu_cross_hosted_platform_specific_repo",
+            "attributes": {
+              "toolchain_prefix": "aarch64-none-elf",
+              "version": "13.2.1-1.1",
+              "url": "https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/releases/download/v13.2.1-1.1/xpack-aarch64-none-elf-gcc-13.2.1-1.1-darwin-arm64.tar.gz",
+              "sha256": "13d1a5b53a847855210b0fc2d2758d0e5cec6e633a2aec920d7a886624082b64",
+              "strip_prefix": "xpack-aarch64-none-elf-gcc-13.2.1-1.1",
+              "exec_compatible_with": [
+                "@platforms//os:macos",
+                "@platforms//cpu:arm64"
+              ]
+            }
+          },
+          "aarch64_none_elf_darwin_x86_64": {
+            "repoRuleId": "@@toolchains_arm_gnu+//:deps.bzl%arm_gnu_cross_hosted_platform_specific_repo",
+            "attributes": {
+              "toolchain_prefix": "aarch64-none-elf",
+              "version": "13.2.1-1.1",
+              "url": "https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/releases/download/v13.2.1-1.1/xpack-aarch64-none-elf-gcc-13.2.1-1.1-darwin-x64.tar.gz",
+              "sha256": "a35b37a9128ca8824bccb0d42da4d77bbbce464b4c5ac3700374f0b2560fdce1",
+              "strip_prefix": "xpack-aarch64-none-elf-gcc-13.2.1-1.1",
+              "exec_compatible_with": [
+                "@platforms//os:macos",
+                "@platforms//cpu:x86_64"
+              ]
+            }
+          },
+          "aarch64_none_elf_linux_aarch64": {
+            "repoRuleId": "@@toolchains_arm_gnu+//:deps.bzl%arm_gnu_cross_hosted_platform_specific_repo",
+            "attributes": {
+              "toolchain_prefix": "aarch64-none-elf",
+              "version": "13.2.1-1.1",
+              "url": "https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/releases/download/v13.2.1-1.1/xpack-aarch64-none-elf-gcc-13.2.1-1.1-linux-arm64.tar.gz",
+              "sha256": "cec5f2820d6c91c612e0a653ee7ada1fb80d93d0e2f4d9ed1dc6f5b477ac349c",
+              "strip_prefix": "xpack-aarch64-none-elf-gcc-13.2.1-1.1",
+              "exec_compatible_with": [
+                "@platforms//os:linux",
+                "@platforms//cpu:arm64"
+              ]
+            }
+          },
+          "aarch64_none_elf_linux_x86_64": {
+            "repoRuleId": "@@toolchains_arm_gnu+//:deps.bzl%arm_gnu_cross_hosted_platform_specific_repo",
+            "attributes": {
+              "toolchain_prefix": "aarch64-none-elf",
+              "version": "13.2.1-1.1",
+              "url": "https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/releases/download/v13.2.1-1.1/xpack-aarch64-none-elf-gcc-13.2.1-1.1-linux-x64.tar.gz",
+              "sha256": "bda035138579b596d7b0ca8815c06d11df24e063bd12c2a5c410f5ad61ec67a4",
+              "strip_prefix": "xpack-aarch64-none-elf-gcc-13.2.1-1.1",
+              "exec_compatible_with": [
+                "@platforms//os:linux",
+                "@platforms//cpu:x86_64"
+              ]
+            }
+          },
+          "aarch64_none_elf_windows_x86_64": {
+            "repoRuleId": "@@toolchains_arm_gnu+//:deps.bzl%arm_gnu_cross_hosted_platform_specific_repo",
+            "attributes": {
+              "toolchain_prefix": "aarch64-none-elf",
+              "version": "13.2.1-1.1",
+              "url": "https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/releases/download/v13.2.1-1.1/xpack-aarch64-none-elf-gcc-13.2.1-1.1-win32-x64.zip",
+              "sha256": "6fb15fcccb4c038b8e0586a03484b58ce63f443cd9c5319b2377063bb665cf98",
+              "strip_prefix": "xpack-aarch64-none-elf-gcc-13.2.1-1.1",
+              "exec_compatible_with": [
+                "@platforms//os:windows",
+                "@platforms//cpu:x86_64"
+              ]
+            }
+          },
+          "aarch64_none_linux_gnu": {
+            "repoRuleId": "@@toolchains_arm_gnu+//:deps.bzl%toolchains_arm_gnu_repo",
+            "attributes": {
+              "toolchain_name": "aarch64_none_linux_gnu",
+              "toolchain_prefix": "aarch64-none-linux-gnu",
+              "version": "13.2.1",
+              "hosts": {
+                "aarch64_none_linux_gnu_linux_x86_64": [
+                  "@platforms//os:linux",
+                  "@platforms//cpu:x86_64"
+                ],
+                "aarch64_none_linux_gnu_windows_x86_64": [
+                  "@platforms//os:windows",
+                  "@platforms//cpu:x86_64"
+                ]
+              }
+            }
+          },
+          "aarch64_none_linux_gnu_linux_x86_64": {
+            "repoRuleId": "@@toolchains_arm_gnu+//:deps.bzl%arm_gnu_cross_hosted_platform_specific_repo",
+            "attributes": {
+              "toolchain_prefix": "aarch64-none-linux-gnu",
+              "version": "13.2.1",
+              "sha256": "12fcdf13a7430655229b20438a49e8566e26551ba08759922cdaf4695b0d4e23",
+              "strip_prefix": "arm-gnu-toolchain-13.2.Rel1-x86_64-aarch64-none-linux-gnu",
+              "url": "https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu/13.2.rel1/binrel/arm-gnu-toolchain-13.2.rel1-x86_64-aarch64-none-linux-gnu.tar.xz",
+              "patches": [
+                "@@toolchains_arm_gnu+//toolchain:patches/0001-Resolve-libc-relative-to-sysroot-aarch64_none_linux_gnu.patch"
+              ],
+              "exec_compatible_with": [
+                "@platforms//os:linux",
+                "@platforms//cpu:x86_64"
+              ]
+            }
+          },
+          "aarch64_none_linux_gnu_windows_x86_64": {
+            "repoRuleId": "@@toolchains_arm_gnu+//:deps.bzl%arm_gnu_cross_hosted_platform_specific_repo",
+            "attributes": {
+              "toolchain_prefix": "aarch64-none-linux-gnu",
+              "version": "13.2.1",
+              "sha256": "ccca7e520adbc5deb36d53a2b373e28a0c7e21107c487d4f5fd9cc8e0dbf6a11",
+              "strip_prefix": "arm-gnu-toolchain-13.2.Rel1-mingw-w64-i686-aarch64-none-linux-gnu",
+              "url": "https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu/13.2.rel1/binrel/arm-gnu-toolchain-13.2.rel1-mingw-w64-i686-aarch64-none-linux-gnu.zip",
+              "patches": [
+                "@@toolchains_arm_gnu+//toolchain:patches/0001-Resolve-libc-relative-to-sysroot-aarch64_none_linux_gnu.patch"
+              ],
+              "exec_compatible_with": [
+                "@platforms//os:windows",
+                "@platforms//cpu:x86_64"
+              ]
+            }
+          }
+        }
+      }
     }
   },
   "facts": {},
