@@ -33,4 +33,5 @@ arm_none_eabi_toolchain(
         "@platforms//os:none",
         "//bazel/platforms:mcu_cortex_m4",
     ],
+    version = "10.3.1",
 )
