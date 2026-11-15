@@ -1,0 +1,10 @@
+build --incompatible_enable_cc_toolchain_resolution
+build --enable_bzlmod=true
+build --lockfile_mode=off
+
+build --cxxopt=-std=c++17
+build --host_cxxopt=-std=c++17
+build:host_clang22 --extra_toolchains=@llvm//toolchain:all
+#build:host_clang22 --@llvm//toolchain:source=bootstrapped
+
+try-import %workspace%/semx/semx-sw/semx.bazelrc

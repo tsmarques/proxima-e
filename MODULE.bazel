@@ -32,7 +32,10 @@ git_repository(
 
 bazel_dep(name = "llvm", version = "0.8.27")
 
-#
+llvm = use_extension("@llvm//extensions:llvm.bzl", "llvm")
+llvm.version(llvm_version = "22.1.0")
+use_repo(llvm, "llvm-project")
+
 toolchain = use_extension("@llvm//extensions:toolchain.bzl", "toolchain")
 toolchain.exec(
     arch = "x86_64",
