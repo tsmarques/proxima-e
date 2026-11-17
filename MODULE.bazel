@@ -93,3 +93,5 @@ register_toolchains("@aarch64_none_linux_gnu//toolchain:all")
 register_toolchains(
     "//bazel/toolchains/arm:cortex_m4_toolchain",
 )
+
+bazel_dep(name = "tomlplusplus", version = "3.4.0.bcr.1")
