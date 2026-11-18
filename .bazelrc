@@ -6,6 +6,9 @@ build --cxxopt=-std=c++17
 build --host_cxxopt=-std=c++17
 build:host_clang22 --extra_toolchains=@llvm//toolchain:all
 build:host_clang22 -c dbg
+build:host_clang22 --copt=-Wall
+build:host_clang22 --copt=-Wextra
+build:host_clang22 --copt=-Werror
 
 test --test_summary=detailed
 test --nocache_test_results
